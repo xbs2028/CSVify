@@ -60,6 +60,7 @@ const Playlists = ({ url, offset, limit, headers, searchVal }) => {
               ></Tracks>
             );
           }
+          return true;
         })}
     </>
   );
@@ -80,14 +81,15 @@ const Tracks = ({ url, offset, limit, headers, name, total, searchVal }) => {
           chunk.items.map((item) => {
             console.log(item);
             let fetchedArtists = "";
-            let artistFollowers = "";
+            // let artistFollowers = "";
             item.track.artists.map((item) => {
               fetchedArtists += item.name + ", ";
-              artistFollowers += item.followers + ", ";
+              // artistFollowers += item.followers + ", ";
+              return true;
             });
 
             fetchedArtists = fetchedArtists.substring(0, fetchedArtists.length-2);
-            artistFollowers = artistFollowers.substring(0, artistFollowers.length-2);
+            // artistFollowers = artistFollowers.substring(0, artistFollowers.length-2);
             // let artistString = fetchedArtists.toLocaleString.replace(/,/g, ', ').trim().toString()
 
             return fetchedData.push([
@@ -162,7 +164,7 @@ const Dashboard = ({ code }) => {
   //const maxSongs = 10000;
 
   const urlPlaylists = 'https://api.spotify.com/v1/me/playlists';
-  const urlTracks = 'https://api.spotify.com/v1/me/tracks';
+  // const urlTracks = 'https://api.spotify.com/v1/me/tracks';
 
   const headers = {
     'Content-Type': 'application/json',

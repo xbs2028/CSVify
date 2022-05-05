@@ -1,37 +1,4 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-
-const useStyles = makeStyles({
-  login: {
-    display: 'grid',
-    placeItems: 'center',
-    // height: '20vh',
-    backgroundColor: 'black',
-    borderRadius: '10px',
-    padding: '2rem',
-    marginLeft: '2rem',
-    marginRight: '2rem',
-
-    '& img': {
-      width: '50%',
-    },
-
-    '& a': {
-      padding: '20px',
-      borderRadius: '99px',
-      backgroundColor: '#1db954',
-      fontWeight: 'bolder',
-      color: 'white',
-      textDecoration: 'none',
-    },
-
-    '& a:hover': {
-      backgroundColor: ' white',
-      borderColor: '#1db954',
-      color: '#1db954',
-    },
-  },
-});
 
 const generateRandomString = (length) => {
   const characters =
@@ -47,7 +14,7 @@ const generateRandomString = (length) => {
 };
 
 function Login() {
-  const classes = useStyles();
+  // const classes = useStyles();
 
   var client_id = '1e26e3ce62024fc1902dd66df3cf0f08'; // Your client id
   var redirect_uri = 'https://csvify.netlify.app/'; // Your redirect uri
