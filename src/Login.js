@@ -49,8 +49,8 @@ const generateRandomString = (length) => {
 function Login() {
   const classes = useStyles();
 
-  var client_id = '82ef2d5a9a5f4cc78084860ad2b6c0c2'; // Your client id
-  var redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+  var client_id = '1e26e3ce62024fc1902dd66df3cf0f08'; // Your client id
+  var redirect_uri = 'http://localhost:8888/callback/'; // Your redirect uri
 
   var stateKey = 'spotify_auth_state';
 

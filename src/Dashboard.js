@@ -172,6 +172,7 @@ const Dashboard = ({ code }) => {
   // if (search === "") {
   return (
     <>
+    <br></br>
       <input type="text"
       placeholder="Search by keyword"
       onChange={(e) => {
@@ -195,15 +196,6 @@ const Dashboard = ({ code }) => {
         headers={headers}
         searchVal={search}
       ></Playlists>
-      <article>
-        <h3>
-          You might want to signout of{' '}
-          <a href="https://www.spotify.com">Spotify</a> after you finish your
-          downloads. <br />
-          The access token for this application automatically expires after a
-          short duration
-        </h3>
-      </article>
     </>
   );
   // }
